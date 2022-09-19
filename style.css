@@ -1,0 +1,21 @@
+:root{
+    --bg: rgb(255, 179, 179);
+    --boxbg1: rgb(255, 219, 164);
+    --boxbg2: rgb(255, 233, 174);
+}
+
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+.box{
+    background-image: linear-gradient(to top, var(--boxbg1) 0%, var(--boxbg2) 100%);
+    width: 200px;
+    height: 200px;
+}
+

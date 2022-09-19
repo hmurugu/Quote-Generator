@@ -1,0 +1,71 @@
+var quotes = ['Happiness can be found even in the darkest of times if only one remembers to turn on the light.',
+              'The woods are lovely, dark and deep, But I have promises to keep, And miles to go before I sleep, And miles to go before I sleep.',
+              'Because the dawn before the sun rises is the darkest, Even in the far future, never forget the you of right now.',
+              'If you try to please everyone, you will please noone. It is impossible to lead your life for others.',
+              'Dream, dream, dream. Dreams transform into thoughts and thoughts result in action.',
+              'Dream is not that which you see while sleeping it is something that does not let you sleep.',
+              'The future belongs to those who believe in the beauty of their dreams.',
+              'Out of the mountain of despair, a stone of hope.',
+              'Be the change you wish to see in the world.',
+              'Anyone who has never made a mistake has never tried something new.',
+              'The only way to do great work is to love what you do.',
+              'It always seems impossible until it is done.',
+              'The best and most beautiful things in the world cannot be seen or even touched — they must be felt with the heart.',
+              'He who is not courageous enough to take risks will accomplish nothing in life.',
+              'Real integrity is doing the right thing, knowing that nobody is going to know whether you did it or not.',
+              'I decided I can’t pay a person to rewind time, so I may as well get over it.',
+              'Sometimes you have got to let everything go - purge yourself. If you are unhappy with anything... whatever is bringing you down, get rid of it. Because you will find that when you are free, your true creativity, your true self comes out.',
+              'Lead from the heart, not the head.',
+              'Those who do not believe in magic will never find it.',
+              'Sometimes you will never know the value of a moment until it becomes a memory.',
+              'Life is like riding a bicycle. To keep your balance, you must keep moving.',
+              'When we strive to become better than we are, everything around us becomes better too.',
+              'Be sure you put your feet in the right place, then stand firm.',
+              'If you don’t like the road you’re walking, start paving another one.',
+              'Keep your eyes on the stars, and your feet on the ground.',
+              'Do what is right, not what is easy nor what is popular.',
+              'You can, you should, and if you’re brave enough to start, you will.',
+              'We build too many walls and not enough bridges.',
+              'We are all in the gutter, but some of us are looking at the stars.',
+              'The way to get started is to quit talking and begin doing.'
+            ]
+
+var persons = ['Albus Dumbledore',
+              'Robert Frost',
+              'BTS',
+              'Sudha Murthy',
+              'A P J Abdul Kalam',
+              'A P J Abdul Kalam',
+              'Eleanor Roosevelt',
+              'Martin Luther King',
+              'Mahatma Gandhi',
+              'Albert Einstein',
+              'Steve Jobs',
+              'Nelson Mandela',
+              'Helen Keller',
+              'Muhammad Ali',
+              'Oprah Winfrey',
+              'Serena Williams',
+              'Tina Turner',
+              'Princess Diana',
+              'Roald Dahl',
+              'Dr. Seuss',
+              'Albert Einstein',
+              'Paulo Coelho',
+              'Abraham Lincoln',
+              'Dolly Parton',
+              'Theodore Roosevelt',
+              'Roy T. Bennett',
+              'Stephen King',
+              'Isaac Newton',
+              'Oscar Wilde',
+              'Walt Disney'
+            ]
+
+function generate()
+{
+    var rNum = Math.floor(Math.random() * (quotes.length));
+
+    document.getElementById('displayquote').innerHTML = quotes[rNum];
+    document.getElementById('displayname').innerHTML = persons[rNum];
+}
