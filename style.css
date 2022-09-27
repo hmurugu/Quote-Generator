@@ -43,6 +43,7 @@ body{
     align-items: center;
     justify-content: center;
     word-wrap: break-word;
+    overflow-x: scroll;
 }
 
 #displayquote{
