@@ -33,7 +33,7 @@ body{
     background-color: var(--boxbg1);
     position: absolute;
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
+    font-size: 150%;
     left: 1.5%;
     bottom: 2.5%;
     align-content: center;
