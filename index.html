@@ -3,17 +3,24 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
     <link rel="stylesheet" href="style.css">
     <title>Quotes!</title>
     </head>
 
     <body>
-        <div id="box"></div>
+        <div id="bigbox">
+        <div id="box">
             <div id="displayquote"></div> 
             <div id="displayname"></div>
-            <button onclick="generate()">Get me a quote!</button>
-            <script src="main.js"></script>
-        
+        </div>
+        </div>
+        <button onclick="generate()">Get me a quote!</button>
+        <script src="main.js"></script>
+        <img src="quotes.png" id="quotespic">
+        <img src="quotes.png" id="quotespic2">
     </body>
 </html>
