@@ -1,7 +1,10 @@
 :root{
-    --bg: rgb(255, 179, 179);
-    --boxbg1: rgb(255, 219, 164);
-    --boxbg2: rgb(255, 233, 174);
+    --bg: rgb(255, 148, 148);
+    --boxbg1: #FFD1D1;
+    --boxbg2: rgb(255, 227, 225);
+    --light: rgb(255, 245, 228);
+    --hov: #FFB4B4;
+    --hov2: #F47C7C;
 }
 
 html{
@@ -13,9 +16,108 @@ body{
     background-color: var(--bg);
 }
 
-.box{
-    background-image: linear-gradient(to top, var(--boxbg1) 0%, var(--boxbg2) 100%);
-    width: 200px;
-    height: 200px;
+#bigbox{
+    background-color: var(--light);
+    height: 50%;
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    border-radius: 5% 5% 5% 5%;
+    box-shadow: 5% var(red);
 }
 
+#box{
+    height: 95%;
+    width: 97%;
+    background-color: var(--boxbg1);
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    left: 1.5%;
+    bottom: 2.5%;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5% 5% 5% 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+#displayquote{
+    width: 90%;
+    text-align: center;
+}
+
+#displayname{
+    width: 90%;
+    text-align: center;
+}
+
+button{
+    position: absolute;
+    left: 45%;
+    top: 75%;
+    border: none;
+    background-color: var(--boxbg1);
+    padding: 1% 1% 1% 1%;
+    border: 2px solid #808080;
+    border-radius: 10% 10% 10% 10%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    box-shadow: 10%;
+    cursor: pointer;
+    display: flex;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:active {
+    background-color: var(--boxbg1);
+    outline: 0;
+  }
+  
+button:hover {
+    outline: 0;
+    background-color: var(--hov); /* Green */
+    /* color: var(--hov2); */
+}
+
+button:hover:after {
+    transform: translate(0, 0);
+  }
+
+button:after {
+    background-color: #808080;
+    border-radius: 10%;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    transform: translate(5%, 5%);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+  
+
+#quotespic{
+    max-width: 12%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    opacity: 0.7;
+}
+
+#quotespic2{
+    max-width: 12%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 18%;
+    opacity: 0.7;
+}
